@@ -12,9 +12,14 @@ a{
     text-decoration: none;
 }
 
+h2{
+    color: #484848;
+    font-weight: 200;
+}
+
 header
 {
-    padding: 0px;
+    padding:0px;
     text-align:center;
 }
 
@@ -23,6 +28,15 @@ section
     background-color:#F1F1F1;
     padding:15px;
     margin-top:5px;
+}
+
+article img{
+    width: 100%;
+    height: auto;
+}
+
+figure{
+    margin: 0;
 }
 
 aside
@@ -56,17 +70,27 @@ nav ul li
 }
 
 
+
 /* Media query for larger screen (minimum Ipad Mini) */
 @media only screen and (min-width : 768px)
 {
     section {
         width: 70%;
         float: left;
+        display: flex;
+        display: -ms-flexbox;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    article {
+        margin: 10px;
+        flex-basis: 30%;
     }
 
     aside {
         width: 30%;
         float: left;
-
     }
+
 }
